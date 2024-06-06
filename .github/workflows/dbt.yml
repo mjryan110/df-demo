@@ -23,7 +23,7 @@ jobs:
           pip install dbt-core dbt-postgres
 
       - name: install requirements
-        run: pip install -q -r requirements.txt
+        run: pip install -q -r requirement.txt
 
       - name: Run dbt
         env:
