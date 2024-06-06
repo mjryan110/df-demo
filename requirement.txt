@@ -1,0 +1,2 @@
+data-diff==0.11.0
+datafold-sdk==0.0.19
