@@ -1,0 +1,12 @@
+datafold_demo_project:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: datafold-project.crbugiiu4j6r.us-east-1.rds.amazonaws.com
+      port: 5432
+      database: postgres
+      user: postgres
+      password: Training
+      schema: public
+      threads: 1
