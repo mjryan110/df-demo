@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: postgres
+    schema: public
+    tables:
+      - name: fitness
+        description: "Table containing fitness data"
+        columns:
+          - name: id
+            description: "Unique identifier for each record"
+          - name: swim
+            description: "Distance swam"
+          - name: bike
+            description: "Distance biked"
+          - name: run
+            description: "Distance ran"
