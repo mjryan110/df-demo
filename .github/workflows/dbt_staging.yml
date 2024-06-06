@@ -36,11 +36,11 @@ jobs:
         run: dbt build --select state:modified+ --defer --state ./ --exclude config.materialized:snapshot --profiles-dir ./
         env: 
           # Update with your PostgreSQL credentials
-          POSTGRES_DB_HOST: ${{ secrets.POSTGRES_DB_HOST }}
-          POSTGRES_DB_PORT: ${{ secrets.POSTGRES_DB_PORT }}
-          POSTGRES_DB_NAME: ${{ secrets.POSTGRES_DB_NAME }}
-          POSTGRES_DB_USER: ${{ secrets.POSTGRES_DB_USER }}
-          POSTGRES_DB_PASSWORD: ${{ secrets.POSTGRES_DB_PASSWORD }}
+          POSTGRES_DB_HOST: datafold-project.crbugiiu4j6r.us-east-1.rds.amazonaws.com
+          POSTGRES_DB_PORT: 5432
+          POSTGRES_DB_NAME: postgres
+          POSTGRES_DB_USER: postgres
+          POSTGRES_DB_PASSWORD: Training
 
       - name: submit artifacts to datafold
         run: |
