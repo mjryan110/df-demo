@@ -1,4 +1,4 @@
--- models/fitness/fitness_summary.sql
+-- models/fitness/fitness_updated_v2.sql
 
 {{ config(materialized='table') }}
 
