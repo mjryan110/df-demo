@@ -1,7 +1,7 @@
 version: 2
 
-sources:
-  - name: postgres
+models:
+  - name: fitness_updated_v2
     schema: public
     tables:
       - name: fitness
