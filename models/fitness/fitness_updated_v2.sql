@@ -14,5 +14,6 @@ with fitness_data as (
 select
     id,
     swim,
-    bike
+    bike,
+    run
 from fitness_data
