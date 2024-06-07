@@ -1,7 +1,7 @@
 version: 2
 
-models:
-  - name: fitness_updated_v2
+sources:
+  - name: postgres
     schema: public
     tables:
       - name: fitness
@@ -20,3 +20,21 @@ models:
             description: "Distance biked"
           - name: run
             description: "Distance ran"
+
+models:
+  - name: fitness_updated_v2
+    description: "Fitness updated v2 table"
+    columns:
+      - name: id
+        description: "Unique identifier for each record"
+        meta:
+          primary-key: true
+        tests:
+          - unique
+          - not_null
+      - name: swim
+        description: "Distance swam"
+      - name: bike
+        description: "Distance biked"
+      - name: run
+        description: "Distance ran"
