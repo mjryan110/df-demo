@@ -6,8 +6,7 @@ with fitness_data as (
     select
         id,
         swim,
-        bike,
-        run
+        bike
     from {{ source('postgres', 'fitness') }}  
 )
 
