@@ -9,6 +9,7 @@ sources:
         columns:
           - name: id
             description: "Unique identifier for each record"
+            tags: ['primary-key']
           - name: swim
             description: "Distance swam"
           - name: bike
