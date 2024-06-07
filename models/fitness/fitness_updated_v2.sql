@@ -17,3 +17,4 @@ select
     bike,
     run
 from fitness_data
+limit 15
