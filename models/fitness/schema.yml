@@ -9,7 +9,11 @@ sources:
         columns:
           - name: id
             description: "Unique identifier for each record"
-            tags: ['primary-key']
+            meta:
+              primary-key: true
+            tests:
+              - unique
+              - not_null
           - name: swim
             description: "Distance swam"
           - name: bike
