@@ -8,7 +8,8 @@ with fitness_data as (
         swim,
         bike,
         run
-    from {{ source('postgres', 'fitness') }}  
+    from {{ source('postgres', 'fitness') }}
+    limit 15
 )
 
 select
