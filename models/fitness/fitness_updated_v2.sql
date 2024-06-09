@@ -16,4 +16,4 @@ select
     swim,
     bike,
     run
-from fitness_data
+from fitness_data LIMIT 10
