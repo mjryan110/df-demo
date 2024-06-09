@@ -1,5 +1,5 @@
 -- models/fitness/fitness_updated_v2.sql
--- test
+-- test2
 
 {{ config(materialized='table') }}
 
