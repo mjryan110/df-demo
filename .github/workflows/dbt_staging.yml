@@ -38,7 +38,7 @@ jobs:
         run: dbt deps
 
       - name: dbt build
-        run: dbt build --exclude config.materialized:snapshot --profiles-dir ./
+        run: dbt build --profiles-dir ./
         env: 
           # Update with your PostgreSQL credentials
           POSTGRES_DB_HOST: datafold-project.crbugiiu4j6r.us-east-1.rds.amazonaws.com
