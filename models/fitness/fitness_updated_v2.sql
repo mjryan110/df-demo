@@ -1,6 +1,6 @@
 -- models/fitness/fitness_updated_v2.sql
 
--- {{ config(materialized='table') }}
+{{ config(materialized='table') }}
 
 with fitness_data as (
     select
