@@ -25,10 +25,13 @@ jobs:
       - name: install requirements
         run: pip install -q -r requirement.txt
 
-      - name: Run dbt
-        env:
-          DBT_PROFILES_DIR: ${{ github.workspace }}
-        run: dbt run --profiles-dir $DBT_PROFILES_DIR
+      # - name: Run dbt
+      #   env:
+      #     DBT_PROFILES_DIR: ${{ github.workspace }}
+      #   run: dbt run --profiles-dir $DBT_PROFILES_DIR
+
+      - name: dbt build
+        run: dbt build --target prod --exclude config.materialized:snapshot --full-refresh --profiles-dir ./
 
       - name: submit artifacts to datafold
         run: |
