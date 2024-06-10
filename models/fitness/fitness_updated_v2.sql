@@ -1,5 +1,4 @@
 -- models/fitness/fitness_updated_v2.sql
--- dummy commit
 
 {{ config(materialized='table') }}
 
