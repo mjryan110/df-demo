@@ -39,7 +39,7 @@ jobs:
 
       - name: dbt build
         run: |
-          mkdir -p ./state/${{ github.head_ref }}
+          mkdir -p ./state/${{ github.head_ref }} ./target/${{ github.head_ref }}
           dbt build --profiles-dir ./ --state ./state/${{ github.head_ref }} --target-path ./target/${{ github.head_ref }}
         env: 
           # Update with your PostgreSQL credentials

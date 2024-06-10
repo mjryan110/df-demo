@@ -32,7 +32,7 @@ jobs:
 
       - name: dbt build
         run:  |
-          mkdir -p ./state/main
+          mkdir -p ./state/main ./target/main
           dbt build --target prod --exclude config.materialized:snapshot --full-refresh --profiles-dir ./ --target-path ./target/main
 
       - name: submit artifacts to datafold
