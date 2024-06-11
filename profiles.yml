@@ -18,5 +18,5 @@ datafold_demo_project:
       database: postgres
       user: postgres
       password: Training
-      schema: public
+      schema: datafold_tmp
       threads: 1
