@@ -14,12 +14,10 @@ sources:
             tests:
               - unique
               - not_null
-          - name: swim
-            description: "Distance swam"
-          - name: bike
-            description: "Distance biked"
-          - name: run
-            description: "Distance ran"
+          - name: activity
+            description: "This is swim, bike, or run"
+          - name: distance
+            description: "The distance for each of those activities"
 
 models:
   - name: fitness_updated_v2
@@ -32,9 +30,7 @@ models:
         tests:
           - unique
           - not_null
-      - name: swim
-        description: "Distance swam"
-      - name: bike
-        description: "Distance biked"
-      - name: run
-        description: "Distance ran"
+      - name: activity
+        description: "This is swim, bike, or run"
+      - name: distance
+        description: "The distance for each of those activities"
