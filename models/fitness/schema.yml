@@ -4,7 +4,7 @@ sources:
   - name: postgres
     schema: public
     tables:
-      - name: fitness
+      - name: fitnessdata
         description: "Table containing fitness data"
         columns:
           - name: id
