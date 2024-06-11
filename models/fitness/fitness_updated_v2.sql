@@ -25,7 +25,7 @@ with fitness_data as (
         id,
         activity,
         distance
-    from {{ source('postgres', 'fitnessData') }}  
+    from {{ source('postgres', 'fitnessData') }}
 )
 
 select
