@@ -10,6 +10,7 @@ with fitness_data as (
         activity,
         distance
     from {{ source('postgres', 'fitnessdata') }}
+    where distance > 5
 )
 
 select
